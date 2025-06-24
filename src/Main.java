@@ -14,17 +14,14 @@ public class Main {
 
     //Task2
 
-    public static void deviceSettings (int year, int os){
-        if (year < 2015 && os == 0){
+    public static void deviceSettings(int year, int os) {
+        if (year < 2015 && os == 0) {
             System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-        }
-        else if (year < 2015 && os == 1){
+        } else if (year < 2015 && os == 1) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
-        else if (year >= 2015 && os == 0) {
+        } else if (year >= 2015 && os == 0) {
             System.out.println("Установите версию приложения для IOS по ссылке");
-        }
-        else if (year >= 2015 && os == 1) {
+        } else if (year >= 2015 && os == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
 
         }
@@ -32,7 +29,7 @@ public class Main {
 
     //Task3
 
-    public static void daysWant (int deliveryDistance){
+    public static void daysWant(int deliveryDistance) {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1");
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
@@ -44,7 +41,7 @@ public class Main {
         }
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         //Task1
 
@@ -59,7 +56,8 @@ public class Main {
 
         //Task3
 
-    daysWant(120);
+        daysWant(120);
+
 
     }
 
