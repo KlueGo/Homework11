@@ -4,7 +4,7 @@ public class Main {
 
     // Task1
 
-    public static void isLeapYear(int year) {
+    public static void lipYearCount(int year) {
         if ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0)) {
             System.out.println(year + " год является Високосным");
         } else {
@@ -14,7 +14,7 @@ public class Main {
 
     //Task2
 
-    public static void deviceSettings(int year, int os) {
+    public static void deviceTune(int year, int os) {
         if (year < 2015 && os == 0) {
             System.out.println("Установите облегченную версию приложения для IOS по ссылке");
         } else if (year < 2015 && os == 1) {
@@ -29,7 +29,7 @@ public class Main {
 
     //Task3
 
-    public static void daysWant(int deliveryDistance) {
+    public static void daysCount(int deliveryDistance) {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1");
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
@@ -45,18 +45,18 @@ public class Main {
 
         //Task1
 
-        isLeapYear(2019);
+        lipYearCount(2019);
 
         //Task2
 
         int currentYear = 2004;
         int phoneOS = 0;
 
-        deviceSettings(currentYear, phoneOS);
+        deviceTune(currentYear, phoneOS);
 
         //Task3
 
-        daysWant(120);
+        daysCount(120);
 
 
     }
