@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-
 public class Main {
 
     // Task1
@@ -29,16 +27,16 @@ public class Main {
 
     //Task3
 
-    public static void daysCount(int deliveryDistance) {
+    public static int daysCount(int deliveryDistance) {
         if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней: 1");
+            deliveryDistance = 1;
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется дней: 2");
+            deliveryDistance = 2;
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется дней: 3");
-        } else {
-            System.out.println("Доставки нет.");
+            deliveryDistance = 3;
+
         }
+        return deliveryDistance;
     }
 
     public static void main(String[] args) {
@@ -56,7 +54,21 @@ public class Main {
 
         //Task3
 
-        daysCount(120);
+        int arriveTime = daysCount(120);
+        if (arriveTime == 1) {
+            System.out.println("Доставка занимает сутки");
+        }
+        else if (arriveTime == 2) {
+            System.out.println("Доставка занимает двое суток");
+        }
+        else if (arriveTime == 3) {
+            System.out.println("Доставка занимает трое суток");
+        }
+        else {
+            System.out.println("Доставки нет");
+        }
+
+
 
 
     }
