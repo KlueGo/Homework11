@@ -57,18 +57,13 @@ public class Main {
         int arriveTime = daysCount(120);
         if (arriveTime == 1) {
             System.out.println("Доставка занимает сутки");
-        }
-        else if (arriveTime == 2) {
+        } else if (arriveTime == 2) {
             System.out.println("Доставка занимает двое суток");
-        }
-        else if (arriveTime == 3) {
+        } else if (arriveTime == 3) {
             System.out.println("Доставка занимает трое суток");
-        }
-        else {
+        } else {
             System.out.println("Доставки нет");
         }
-
-
 
 
     }
